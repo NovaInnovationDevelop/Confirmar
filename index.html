@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correo confirmado</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #181c1f;
-            color: #fff;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        .box {
-            background: #23272b;
-            padding: 32px 24px;
-            border-radius: 14px;
-            max-width: 380px;
-            width: 90%;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.25);
-        }
-        h1 {
-            color: #00d26a;
-            font-size: 1.8rem;
-            margin-bottom: 14px;
-        }
-        p {
-            color: #e5e5e5;
-            font-size: 1rem;
-            line-height: 1.5;
-            margin-bottom: 22px;
-        }
-        a {
-            display: inline-block;
-            background: #00d26a;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 22px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: background 0.2s;
-        }
-        a:hover {
-            background: #00b359;
-        }
-        .small {
-            margin-top: 18px;
-            font-size: 0.85rem;
-            color: #9aa1a6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Correo confirmado</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #181c1f;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+    }
+    .box {
+      background: #23272b;
+      padding: 40px 28px;
+      border-radius: 16px;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+      animation: fadeIn 0.6s ease;
+    }
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      color: #00d26a;
+      margin-bottom: 14px;
+    }
+    .msg {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #dfe6e9;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
-
-    <div class="box">
-        <h1>¡Correo confirmado! ✅</h1>
-        <p>Tu cuenta ha sido activada correctamente.<br>
-        Ya puedes iniciar sesión y disfrutar de la aplicación.</p>
-
-        <a href="go:inicio">Continuar</a>
-
-        <p class="small">
-            Si no deberías haber llegado aquí, simplemente cierra esta página.
-        </p>
-    </div>
-
+  <div class="box">
+    <div class="title">¡Correo confirmado!</div>
+    <p class="msg">
+      Gracias, tu cuenta ha sido verificada correctamente.<br><br>
+      Ya puedes cerrar esta página y continuar usando la aplicación.
+    </p>
+  </div>
 </body>
 </html>
